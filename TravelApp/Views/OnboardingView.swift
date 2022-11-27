@@ -16,6 +16,8 @@ struct OnboardingItem: Hashable {
 
 struct OnboardingView: View {
     @State var activeSlide: Int = 0;
+    @Environment(\.colorScheme) var colorScheme
+    
     var slides: [OnboardingItem] = [
         OnboardingItem(
             imageName: "onboarding_slide_1",
@@ -55,8 +57,25 @@ struct OnboardingView: View {
                                 .animation(.default, value: activeSlide)
                         }
                     }
-                    .padding(.bottom, 84)
+                    .padding(.bottom, 16)
+                    NavigationLink(destination: SignInView()) {
+                        VStack {
+                            Image(systemName: "arrow.right")
+                                .resizable()
+                                .scaledToFit()
+                                .foregroundColor(Color("green"))
+                                .frame(width: 20, height: 20)
+                                .bold()
+                        }
+                        .frame(width: 64, height: 64)
+                        .background(colorScheme == .dark ? Color(.secondarySystemBackground) : Color(.systemBackground) )
+                        .cornerRadius(84)
+                        .shadow(color: .primary.opacity(Double(0.1)), radius: 30, x: 4, y: 16)
+                        .scaleEffect(activeSlide == 2 ? 1 : 0)
+                        .animation(.default, value: activeSlide)
+                    }
                 }
+                .padding(.bottom, 74)
             }
         }.ignoresSafeArea()
     }
@@ -77,7 +96,7 @@ struct OnboardingSlide: View {
                 .resizable()
                 .scaledToFit()
                 .frame(width: UIScreen.main.bounds.width * 0.65, height: UIScreen.main.bounds.width * 0.65)
-//            .frame(width: 300, height: 300)
+            //            .frame(width: 300, height: 300)
             Text(onboardingItem.title)
                 .bold()
                 .font(.title2)

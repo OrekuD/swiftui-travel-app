@@ -42,7 +42,7 @@ struct WelcomeView: View {
                         .frame(width: 84, height: 84)
                         .background(colorScheme == .dark ? Color(.secondarySystemBackground) : Color(.systemBackground) )
                         .cornerRadius(84)
-                        .shadow(color: .primary.opacity(Double(0.1)), radius: 30, x: 4, y: 16)
+                        .shadow(color: .primary.opacity(0.1), radius: 30, x: 4, y: 16)
                     }.frame(maxWidth: .infinity, alignment: .trailing)
             }.padding(.bottom, 70).padding(.horizontal, 34)
         }

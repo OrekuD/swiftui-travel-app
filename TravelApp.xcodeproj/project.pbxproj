@@ -17,6 +17,11 @@
 		79165E0D2932E7DB00AB68C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79165E0C2932E7DB00AB68C4 /* LaunchScreen.storyboard */; };
 		79165E102932ECE200AB68C4 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79165E0F2932ECE200AB68C4 /* WelcomeView.swift */; };
 		79165E122932F65A00AB68C4 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79165E112932F65A00AB68C4 /* OnboardingView.swift */; };
+		79165E1429338AA700AB68C4 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79165E1329338AA700AB68C4 /* SignInView.swift */; };
+		79165E172933C03000AB68C4 /* TextInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79165E162933C02F00AB68C4 /* TextInput.swift */; };
+		79165E192933D03500AB68C4 /* ButtonLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79165E182933D03500AB68C4 /* ButtonLabel.swift */; };
+		79165E1B2933D3DA00AB68C4 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79165E1A2933D3DA00AB68C4 /* SignUpView.swift */; };
+		79165E1D293411AE00AB68C4 /* ForgotPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79165E1C293411AE00AB68C4 /* ForgotPasswordView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +55,11 @@
 		79165E0C2932E7DB00AB68C4 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		79165E0F2932ECE200AB68C4 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		79165E112932F65A00AB68C4 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		79165E1329338AA700AB68C4 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		79165E162933C02F00AB68C4 /* TextInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextInput.swift; sourceTree = "<group>"; };
+		79165E182933D03500AB68C4 /* ButtonLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonLabel.swift; sourceTree = "<group>"; };
+		79165E1A2933D3DA00AB68C4 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		79165E1C293411AE00AB68C4 /* ForgotPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +113,7 @@
 				79165DE22932D12100AB68C4 /* TravelAppApp.swift */,
 				79165E0E2932ECD000AB68C4 /* Views */,
 				79165DE42932D12100AB68C4 /* ContentView.swift */,
+				79165E152933BFCB00AB68C4 /* Components */,
 				79165DE62932D12300AB68C4 /* Assets.xcassets */,
 				79165DE82932D12300AB68C4 /* Preview Content */,
 				79165E0C2932E7DB00AB68C4 /* LaunchScreen.storyboard */,
@@ -140,8 +151,20 @@
 			children = (
 				79165E0F2932ECE200AB68C4 /* WelcomeView.swift */,
 				79165E112932F65A00AB68C4 /* OnboardingView.swift */,
+				79165E1329338AA700AB68C4 /* SignInView.swift */,
+				79165E1A2933D3DA00AB68C4 /* SignUpView.swift */,
+				79165E1C293411AE00AB68C4 /* ForgotPasswordView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		79165E152933BFCB00AB68C4 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				79165E162933C02F00AB68C4 /* TextInput.swift */,
+				79165E182933D03500AB68C4 /* ButtonLabel.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,9 +299,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				79165DE52932D12100AB68C4 /* ContentView.swift in Sources */,
+				79165E192933D03500AB68C4 /* ButtonLabel.swift in Sources */,
 				79165E122932F65A00AB68C4 /* OnboardingView.swift in Sources */,
 				79165E102932ECE200AB68C4 /* WelcomeView.swift in Sources */,
+				79165E1B2933D3DA00AB68C4 /* SignUpView.swift in Sources */,
 				79165DE32932D12100AB68C4 /* TravelAppApp.swift in Sources */,
+				79165E1429338AA700AB68C4 /* SignInView.swift in Sources */,
+				79165E1D293411AE00AB68C4 /* ForgotPasswordView.swift in Sources */,
+				79165E172933C03000AB68C4 /* TextInput.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
