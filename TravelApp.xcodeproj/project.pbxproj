@@ -22,6 +22,8 @@
 		79165E192933D03500AB68C4 /* ButtonLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79165E182933D03500AB68C4 /* ButtonLabel.swift */; };
 		79165E1B2933D3DA00AB68C4 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79165E1A2933D3DA00AB68C4 /* SignUpView.swift */; };
 		79165E1D293411AE00AB68C4 /* ForgotPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79165E1C293411AE00AB68C4 /* ForgotPasswordView.swift */; };
+		79165E1F29341DAA00AB68C4 /* EnterPhoneNumberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79165E1E29341DAA00AB68C4 /* EnterPhoneNumberView.swift */; };
+		79165E22293429F500AB68C4 /* TravelAppViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79165E21293429F500AB68C4 /* TravelAppViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +62,8 @@
 		79165E182933D03500AB68C4 /* ButtonLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonLabel.swift; sourceTree = "<group>"; };
 		79165E1A2933D3DA00AB68C4 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		79165E1C293411AE00AB68C4 /* ForgotPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordView.swift; sourceTree = "<group>"; };
+		79165E1E29341DAA00AB68C4 /* EnterPhoneNumberView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterPhoneNumberView.swift; sourceTree = "<group>"; };
+		79165E21293429F500AB68C4 /* TravelAppViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelAppViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				79165DE22932D12100AB68C4 /* TravelAppApp.swift */,
+				79165E202934298900AB68C4 /* ViewModel */,
 				79165E0E2932ECD000AB68C4 /* Views */,
 				79165DE42932D12100AB68C4 /* ContentView.swift */,
 				79165E152933BFCB00AB68C4 /* Components */,
@@ -154,6 +159,7 @@
 				79165E1329338AA700AB68C4 /* SignInView.swift */,
 				79165E1A2933D3DA00AB68C4 /* SignUpView.swift */,
 				79165E1C293411AE00AB68C4 /* ForgotPasswordView.swift */,
+				79165E1E29341DAA00AB68C4 /* EnterPhoneNumberView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -165,6 +171,14 @@
 				79165E182933D03500AB68C4 /* ButtonLabel.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		79165E202934298900AB68C4 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				79165E21293429F500AB68C4 /* TravelAppViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -307,6 +321,8 @@
 				79165E1429338AA700AB68C4 /* SignInView.swift in Sources */,
 				79165E1D293411AE00AB68C4 /* ForgotPasswordView.swift in Sources */,
 				79165E172933C03000AB68C4 /* TextInput.swift in Sources */,
+				79165E22293429F500AB68C4 /* TravelAppViewModel.swift in Sources */,
+				79165E1F29341DAA00AB68C4 /* EnterPhoneNumberView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

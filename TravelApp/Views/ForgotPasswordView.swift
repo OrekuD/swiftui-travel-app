@@ -48,7 +48,7 @@ struct ForgotPasswordView: View {
             .padding(.top, 2)
             .padding(.bottom, 48)
             
-            TextInput(value: $email, isPsswordVisible: .constant(true), isPsswordField: false, placeholder: "Enter Email / Phone Number")
+            TextInput(value: $email, isPasswordVisible: .constant(true), isPasswordField: false, placeholder: "Enter Email / Phone Number")
             
             Button {
                 print("da")

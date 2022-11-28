@@ -10,7 +10,7 @@ import SwiftUI
 struct SignInView: View {
     @State var email: String = "";
     @State var password: String = "";
-    @State var isPsswordVisible: Bool = false;
+    @State var isPasswordVisible: Bool = false;
     
     var body: some View {
         ScrollView(.vertical, showsIndicators: false) {
@@ -41,9 +41,9 @@ struct SignInView: View {
                 .foregroundColor(Color("darkgrey"))
                 .padding(.vertical, 24)
             
-            TextInput(value: $email, isPsswordVisible: .constant(true), isPsswordField: false, placeholder: "Enter Email / Phone Number")
+            TextInput(value: $email, isPasswordVisible: .constant(true), isPasswordField: false, placeholder: "Enter Email / Phone Number")
             
-            TextInput(value: $password, isPsswordVisible: $isPsswordVisible, isPsswordField: true, placeholder: "Password")
+            TextInput(value: $password, isPasswordVisible: $isPasswordVisible, isPasswordField: true, placeholder: "Password")
             
 
             NavigationLink {

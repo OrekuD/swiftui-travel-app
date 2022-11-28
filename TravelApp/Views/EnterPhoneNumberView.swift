@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct SignUpView: View {
+struct EnterPhoneNumberView: View {
     @State var email: String = "";
     @State var fullname: String = "";
     @State var password: String = "";
@@ -23,39 +23,26 @@ struct SignUpView: View {
                 .frame(maxWidth: .infinity, alignment: .leading)
                 .padding(.top, 78)
             
-            HStack {
-                Button {
-                    print("okay")
-                } label: {
-                    SocialButton(label: "GOOGLE", color: Color("red"))
-                }
-                Spacer()
-                Button {
-                    print("okay")
-                } label: {
-                    SocialButton(label: "FACEBOOK", color: Color("blue"))
-                }
+            VStack {
+                Text("Please Enter") + Text(" Your Phone Nuber, ").bold() + Text("So We Can Verify You.")
             }
-            .frame(maxWidth: .infinity)
-            .padding(.top, 24)
+            .frame(maxWidth: .infinity, alignment: .leading)
+            .padding(.top, 2)
+            .padding(.bottom, 12)
             
-            Text("OR")
-                .tracking(4)
-                .foregroundColor(Color("darkgrey"))
-                .padding(.vertical, 24)
+            Text("Enter Your Phone Number")
+                .padding(.top, 24)
+                .padding(.bottom, 8)
+                .bold()
+                .frame(maxWidth: .infinity, alignment: .leading)
             
-            TextInput(value: $email, isPasswordVisible: .constant(true), isPasswordField: false, placeholder: "Full Name")
+            TextInput(value: $email, isPasswordVisible: .constant(true), isPasswordField: false, placeholder: "Enter Email / Phone Number", isPhoneNumberField: true)
             
-            TextInput(value: $email, isPasswordVisible: .constant(true), isPasswordField: false, placeholder: "Enter Email / Phone Number")
-            
-            TextInput(value: $password, isPasswordVisible: $isPasswordVisible, isPasswordField: true, placeholder: "Password")
-            
-            TextInput(value: $confirmPassword, isPasswordVisible: $isConfirmPasswordVisible, isPasswordField: true, placeholder: "Confirm Password")
             
             Button {
                 print("da")
             } label: {
-                ButtonLabel(isDisabled: false, label: "Register")
+                ButtonLabel(isDisabled: false, label: "Next")
             }.padding(.vertical, 18)
 
             
@@ -84,8 +71,8 @@ struct SignUpView: View {
     }
 }
 
-struct SignUpView_Previews: PreviewProvider {
+struct EnterPhoneNumberView_Previews: PreviewProvider {
     static var previews: some View {
-        SignUpView()
+        EnterPhoneNumberView().environmentObject(TravelAppViewModel())
     }
 }
