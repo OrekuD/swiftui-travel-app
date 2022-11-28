@@ -52,11 +52,14 @@ struct SignUpView: View {
             
             TextInput(value: $confirmPassword, isPasswordVisible: $isConfirmPasswordVisible, isPasswordField: true, placeholder: "Confirm Password")
             
-            Button {
-                print("da")
-            } label: {
+            NavigationLink(destination: EnterPhoneNumberView()) {
                 ButtonLabel(isDisabled: false, label: "Register")
             }.padding(.vertical, 18)
+//            Button {
+//                print("da")
+//            } label: {
+//                ButtonLabel(isDisabled: false, label: "Register")
+//            }.padding(.vertical, 18)
 
             
             Text("Already have an account?").padding(.vertical, 18)

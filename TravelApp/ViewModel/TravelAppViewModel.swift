@@ -42,7 +42,7 @@ final class TravelAppViewModel: ObservableObject {
             }
             
         }
-        return data.reversed()
+        return data
     }
     
     func setCountry(data: CountryData) {
