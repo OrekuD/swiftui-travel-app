@@ -25,13 +25,13 @@ struct AccountCreatedView: View {
                     .foregroundColor(.black.opacity(0.6))
                     .padding(.bottom, 54)
                 
-                Button {
-                    print("hh")
+                NavigationLink {
+                    MainView()
                 } label: {
                     ButtonLabel(isDisabled: false, label: "Get Started")
-                }
-                .frame(width: 200)
-                .shadow(color: .black.opacity(0.2), radius: 10, x: 10, y: 10)
+                        .frame(width: 200)
+                        .shadow(color: .black.opacity(0.2), radius: 10, x: 10, y: 10)
+                }                
 
             }
             .padding(.horizontal, 24)

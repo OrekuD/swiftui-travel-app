@@ -27,6 +27,7 @@
 		796B5A5F2938229300C80E9E /* VerifyCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796B5A5E2938229300C80E9E /* VerifyCodeView.swift */; };
 		796B5A612938231800C80E9E /* BackButtonLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796B5A602938231800C80E9E /* BackButtonLabel.swift */; };
 		796B5A63293827F500C80E9E /* AccountCreatedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796B5A62293827F500C80E9E /* AccountCreatedView.swift */; };
+		796B5A652938324D00C80E9E /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796B5A642938324C00C80E9E /* MainView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +71,7 @@
 		796B5A5E2938229300C80E9E /* VerifyCodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyCodeView.swift; sourceTree = "<group>"; };
 		796B5A602938231800C80E9E /* BackButtonLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackButtonLabel.swift; sourceTree = "<group>"; };
 		796B5A62293827F500C80E9E /* AccountCreatedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountCreatedView.swift; sourceTree = "<group>"; };
+		796B5A642938324C00C80E9E /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,6 +170,7 @@
 				79165E1E29341DAA00AB68C4 /* EnterPhoneNumberView.swift */,
 				796B5A5E2938229300C80E9E /* VerifyCodeView.swift */,
 				796B5A62293827F500C80E9E /* AccountCreatedView.swift */,
+				796B5A642938324C00C80E9E /* MainView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -334,6 +337,7 @@
 				79165E172933C03000AB68C4 /* TextInput.swift in Sources */,
 				796B5A612938231800C80E9E /* BackButtonLabel.swift in Sources */,
 				79165E22293429F500AB68C4 /* TravelAppViewModel.swift in Sources */,
+				796B5A652938324D00C80E9E /* MainView.swift in Sources */,
 				79165E1F29341DAA00AB68C4 /* EnterPhoneNumberView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

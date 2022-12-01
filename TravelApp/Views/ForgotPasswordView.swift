@@ -39,11 +39,14 @@ struct ForgotPasswordView: View {
             
             TextInput(value: $email, isPasswordVisible: .constant(true), isPasswordField: false, placeholder: "Enter Email / Phone Number")
             
-            Button {
-                print("da")
-            } label: {
-                ButtonLabel(isDisabled: false, label: "Send")
+            VStack {
+                NavigationLink {
+                    EnterPhoneNumberView()
+                } label: {
+                    ButtonLabel(isDisabled: false, label: "Send")
+                }
             }.padding(.vertical, 18)
+
             
         }
         .ignoresSafeArea()

@@ -38,15 +38,15 @@ struct EnterPhoneNumberView: View {
             
             TextInput(value: $email, isPasswordVisible: .constant(true), isPasswordField: false, placeholder: "Enter Email / Phone Number", isPhoneNumberField: true)
             
-            
-            Button {
-                print("da")
+            NavigationLink {
+                AccountCreatedView()
             } label: {
                 ButtonLabel(isDisabled: false, label: "Next")
-            }.padding(.vertical, 18)
-
+            }
             
-            Text("Already have an account?").padding(.vertical, 18)
+            Text("Already have an account?")
+                .padding(.top, 36)
+                .padding(.bottom, 18)
             
             NavigationLink(destination: SignInView()) {
                 VStack {
