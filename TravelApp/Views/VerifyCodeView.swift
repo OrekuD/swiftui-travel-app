@@ -1,15 +1,14 @@
 //
-//  ForgotPasswordView.swift
+//  VerifyCodeView.swift
 //  TravelApp
 //
-//  Created by Cyboticx LLC on 27/11/2022.
+//  Created by Cyboticx LLC on 30/11/2022.
 //
 
 import SwiftUI
 
-struct ForgotPasswordView: View {
-    @State var email: String = "";
-    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
+struct VerifyCodeView: View {
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>;
     
     var body: some View {
         ScrollView(.vertical, showsIndicators: false) {
@@ -24,27 +23,41 @@ struct ForgotPasswordView: View {
             .padding(.bottom, 32)
             .frame(maxWidth: .infinity, alignment: .leading)
             
-            Text("Forgot Password")
+            Text("Verify code")
                 .bold()
                 .font(.largeTitle)
                 .frame(maxWidth: .infinity, alignment: .leading)
     
             
             VStack {
-                Text("Please Enter Your") + Text(" Email Address / Phone Nuber ").bold() + Text("To Reset Your Password")
+                Text("Check Your SMS Inbox, We Have Sent You The Code At") + Text(" +00 000 0000").bold()
             }
             .frame(maxWidth: .infinity, alignment: .leading)
             .padding(.top, 2)
             .padding(.bottom, 48)
             
-            TextInput(value: $email, isPasswordVisible: .constant(true), isPasswordField: false, placeholder: "Enter Email / Phone Number")
+            // TODO: add one time code input
             
-            Button {
-                print("da")
-            } label: {
-                ButtonLabel(isDisabled: false, label: "Send")
-            }.padding(.vertical, 18)
+            HStack {
+                Text("Didn't Receive A Code?")
+                    .foregroundColor(.black.opacity(0.6))
+                Button {
+                    print("Kkd")
+                } label: {
+                    Text("Resend Code")
+                        .foregroundColor(Color("green"))
+                        .underline()
+                        .bold()
+                }
+            }
+            .frame(maxWidth: .infinity, alignment: .leading)
+            .padding(.bottom, 24)
             
+            NavigationLink(destination: AccountCreatedView()) {
+                ButtonLabel(isDisabled: false, label: "Next")
+            }
+            
+
         }
         .ignoresSafeArea()
         .padding(.horizontal, 24)
@@ -55,8 +68,8 @@ struct ForgotPasswordView: View {
     }
 }
 
-struct ForgotPasswordView_Previews: PreviewProvider {
+struct VerifyCodeView_Previews: PreviewProvider {
     static var previews: some View {
-        ForgotPasswordView()
+        VerifyCodeView()
     }
 }
