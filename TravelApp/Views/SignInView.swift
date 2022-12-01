@@ -54,12 +54,13 @@ struct SignInView: View {
                     .frame(maxWidth: .infinity, alignment: .trailing)
                     .bold()
             }
-
             
-            Button {
-                print("da")
-            } label: {
-                ButtonLabel(isDisabled: false, label: "Login")
+            VStack {
+                NavigationLink {
+                    MainView()
+                } label: {
+                    ButtonLabel(isDisabled: false, label: "Login")
+                }
             }.padding(.vertical, 18)
 
             

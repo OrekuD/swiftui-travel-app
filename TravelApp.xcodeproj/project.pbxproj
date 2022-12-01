@@ -28,6 +28,10 @@
 		796B5A612938231800C80E9E /* BackButtonLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796B5A602938231800C80E9E /* BackButtonLabel.swift */; };
 		796B5A63293827F500C80E9E /* AccountCreatedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796B5A62293827F500C80E9E /* AccountCreatedView.swift */; };
 		796B5A652938324D00C80E9E /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796B5A642938324C00C80E9E /* MainView.swift */; };
+		79C2F23F29383514007D949C /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C2F23E29383514007D949C /* HomeView.swift */; };
+		79C2F241293852E7007D949C /* ExploreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C2F240293852E7007D949C /* ExploreView.swift */; };
+		79C2F243293852F9007D949C /* NotificationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C2F242293852F9007D949C /* NotificationsView.swift */; };
+		79C2F24529385308007D949C /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C2F24429385308007D949C /* ProfileView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +76,10 @@
 		796B5A602938231800C80E9E /* BackButtonLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackButtonLabel.swift; sourceTree = "<group>"; };
 		796B5A62293827F500C80E9E /* AccountCreatedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountCreatedView.swift; sourceTree = "<group>"; };
 		796B5A642938324C00C80E9E /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		79C2F23E29383514007D949C /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		79C2F240293852E7007D949C /* ExploreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreView.swift; sourceTree = "<group>"; };
+		79C2F242293852F9007D949C /* NotificationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsView.swift; sourceTree = "<group>"; };
+		79C2F24429385308007D949C /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,6 +179,10 @@
 				796B5A5E2938229300C80E9E /* VerifyCodeView.swift */,
 				796B5A62293827F500C80E9E /* AccountCreatedView.swift */,
 				796B5A642938324C00C80E9E /* MainView.swift */,
+				79C2F23E29383514007D949C /* HomeView.swift */,
+				79C2F240293852E7007D949C /* ExploreView.swift */,
+				79C2F242293852F9007D949C /* NotificationsView.swift */,
+				79C2F24429385308007D949C /* ProfileView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -336,9 +348,13 @@
 				79165E1D293411AE00AB68C4 /* ForgotPasswordView.swift in Sources */,
 				79165E172933C03000AB68C4 /* TextInput.swift in Sources */,
 				796B5A612938231800C80E9E /* BackButtonLabel.swift in Sources */,
+				79C2F241293852E7007D949C /* ExploreView.swift in Sources */,
 				79165E22293429F500AB68C4 /* TravelAppViewModel.swift in Sources */,
+				79C2F23F29383514007D949C /* HomeView.swift in Sources */,
 				796B5A652938324D00C80E9E /* MainView.swift in Sources */,
+				79C2F24529385308007D949C /* ProfileView.swift in Sources */,
 				79165E1F29341DAA00AB68C4 /* EnterPhoneNumberView.swift in Sources */,
+				79C2F243293852F9007D949C /* NotificationsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

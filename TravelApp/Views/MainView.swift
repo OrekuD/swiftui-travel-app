@@ -9,7 +9,32 @@ import SwiftUI
 
 struct MainView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+        TabView {
+            HomeView()
+                .tabItem {
+                    Label("Home", systemImage: "house.fill")
+                }
+            
+            ExploreView()
+                .tabItem {
+                    Label("Explore", systemImage: "safari.fill")
+                }
+            
+            NotificationsView()
+                .tabItem {
+                    Label("Notifications", systemImage: "bell.fill")
+                }
+            
+            ProfileView()
+                .tabItem {
+                    Label("Profile", systemImage: "person.fill")
+                }
+        }
+        .accentColor(Color("green"))
+        .navigationBarBackButtonHidden()
+        .navigationTitle("")
+        .navigationBarHidden(true)
     }
 }
 
