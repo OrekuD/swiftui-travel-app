@@ -16,6 +16,7 @@ struct CountryData: Hashable {
 final class TravelAppViewModel: ObservableObject {
     @Published var countriesData: [CountryData] = []
     @Published var country: CountryData;
+    @Published var isLocationViewVisible: Bool = false;
     
     init() {
         country = CountryData(name: "", flag: "")
@@ -47,6 +48,14 @@ final class TravelAppViewModel: ObservableObject {
     
     func setCountry(data: CountryData) {
         country = data
+    }
+    
+    func toggleLocationView() {
+        isLocationViewVisible.toggle()
+    }
+    
+    func setLocationView(state: Bool) {
+        isLocationViewVisible = state
     }
 }
 
