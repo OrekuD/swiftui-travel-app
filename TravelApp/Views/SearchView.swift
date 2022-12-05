@@ -231,13 +231,8 @@ struct SearchView: View {
             .padding(.horizontal, 12)
         }
         .padding(.horizontal, 12)
-        .navigationBarItems(leading: Button(""){
-            
-        })
-//        .accentColor(Color("green"))
-//        .navigationTitle("")
-//        .navigationBarBackButtonHidden()
-//        .navigationBarHidden(false)
+        .navigationBarBackButtonHidden()
+        .navigationBarHidden(false)
         //        .ignoresSafeArea()
     }
 }
@@ -266,4 +261,11 @@ struct SwiftUIWrapper<T: View>: UIViewControllerRepresentable {
         UIHostingController(rootView: content())
     }
     func updateUIViewController(_ uiViewController: UIHostingController<T>, context: Context) {}
+}
+
+extension UINavigationController {
+    override open func viewDidLoad() {
+        super.viewDidLoad()
+        interactivePopGestureRecognizer?.delegate = nil
+    }
 }

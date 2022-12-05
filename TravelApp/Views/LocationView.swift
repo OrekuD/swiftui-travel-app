@@ -250,7 +250,6 @@ struct LocationView: View {
         }
         .ignoresSafeArea()
         .navigationBarBackButtonHidden()
-        .navigationTitle("")
         .navigationBarHidden(true)
         .frame(maxHeight: UIScreen.main.bounds.height)
         .background(Color(.systemBackground))

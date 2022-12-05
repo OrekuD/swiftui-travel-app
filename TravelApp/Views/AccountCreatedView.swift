@@ -38,7 +38,6 @@ struct AccountCreatedView: View {
         }
         .ignoresSafeArea()
         .navigationBarBackButtonHidden()
-        .navigationTitle("")
         .navigationBarHidden(true)
     }
 }

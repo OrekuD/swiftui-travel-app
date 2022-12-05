@@ -94,7 +94,6 @@ struct MainView: View {
         }
         .accentColor(Color("green"))
         .navigationBarBackButtonHidden()
-        .navigationTitle("")
         .navigationBarHidden(true)
         .ignoresSafeArea()
     }

@@ -65,7 +65,6 @@ struct EnterPhoneNumberView: View {
         .ignoresSafeArea()
         .padding(.horizontal, 24)
         .navigationBarBackButtonHidden()
-        .navigationTitle("")
         .navigationBarHidden(true)
         .background(Color(.secondarySystemBackground))
     }
