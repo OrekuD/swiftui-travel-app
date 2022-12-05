@@ -29,6 +29,8 @@
 		796B5A63293827F500C80E9E /* AccountCreatedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796B5A62293827F500C80E9E /* AccountCreatedView.swift */; };
 		796B5A652938324D00C80E9E /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796B5A642938324C00C80E9E /* MainView.swift */; };
 		79881285293C163D00F1700A /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79881284293C163D00F1700A /* SearchView.swift */; };
+		79881289293D8B8B00F1700A /* SearchResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79881288293D8B8B00F1700A /* SearchResultsView.swift */; };
+		7988128B293DAC0C00F1700A /* PaymentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7988128A293DAC0C00F1700A /* PaymentView.swift */; };
 		79B2FDE62939F79C00DC4282 /* LocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B2FDE52939F79C00DC4282 /* LocationView.swift */; };
 		79C2F23F29383514007D949C /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C2F23E29383514007D949C /* HomeView.swift */; };
 		79C2F241293852E7007D949C /* ExploreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C2F240293852E7007D949C /* ExploreView.swift */; };
@@ -79,6 +81,8 @@
 		796B5A62293827F500C80E9E /* AccountCreatedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountCreatedView.swift; sourceTree = "<group>"; };
 		796B5A642938324C00C80E9E /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		79881284293C163D00F1700A /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		79881288293D8B8B00F1700A /* SearchResultsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsView.swift; sourceTree = "<group>"; };
+		7988128A293DAC0C00F1700A /* PaymentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentView.swift; sourceTree = "<group>"; };
 		79B2FDE52939F79C00DC4282 /* LocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationView.swift; sourceTree = "<group>"; };
 		79C2F23E29383514007D949C /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		79C2F240293852E7007D949C /* ExploreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreView.swift; sourceTree = "<group>"; };
@@ -189,6 +193,8 @@
 				79C2F24429385308007D949C /* ProfileView.swift */,
 				79B2FDE52939F79C00DC4282 /* LocationView.swift */,
 				79881284293C163D00F1700A /* SearchView.swift */,
+				79881288293D8B8B00F1700A /* SearchResultsView.swift */,
+				7988128A293DAC0C00F1700A /* PaymentView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -343,12 +349,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				79165DE52932D12100AB68C4 /* ContentView.swift in Sources */,
+				7988128B293DAC0C00F1700A /* PaymentView.swift in Sources */,
 				79165E192933D03500AB68C4 /* ButtonLabel.swift in Sources */,
 				79165E122932F65A00AB68C4 /* OnboardingView.swift in Sources */,
 				796B5A63293827F500C80E9E /* AccountCreatedView.swift in Sources */,
 				79165E102932ECE200AB68C4 /* WelcomeView.swift in Sources */,
 				79165E1B2933D3DA00AB68C4 /* SignUpView.swift in Sources */,
 				79165DE32932D12100AB68C4 /* TravelAppApp.swift in Sources */,
+				79881289293D8B8B00F1700A /* SearchResultsView.swift in Sources */,
 				796B5A5F2938229300C80E9E /* VerifyCodeView.swift in Sources */,
 				79165E1429338AA700AB68C4 /* SignInView.swift in Sources */,
 				79165E1D293411AE00AB68C4 /* ForgotPasswordView.swift in Sources */,

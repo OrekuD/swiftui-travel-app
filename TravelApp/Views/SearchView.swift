@@ -221,11 +221,13 @@ struct SearchView: View {
             Spacer()
             
             VStack {
-                Button {
-                    print("search")
+                
+                NavigationLink {
+                    SearchResultsView()
                 } label: {
                     ButtonLabel(isDisabled: false, label: "Search")
                 }
+
             }
             .padding(.bottom, 12)
             .padding(.horizontal, 12)

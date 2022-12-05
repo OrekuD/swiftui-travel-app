@@ -134,7 +134,6 @@ struct LocationView: View {
                     Text("Paris possesses a rich and attractive cultural scene with shows, activities and festivals.")
                         .padding(.vertical, 24)
                         .foregroundColor(.gray)
-//                        .font(.subheadline)
                         .frame(maxWidth: .infinity, alignment: .leading)
                     
                     HStack(spacing: 0) {
@@ -148,11 +147,9 @@ struct LocationView: View {
                             
                             VStack(alignment: .leading, spacing: 0) {
                                 Text("5 Days")
-//                                    .font(.subheadline)
                                     .bold()
                                 
                                 Text("Duration")
-//                                    .font(.subheadline)
                                     .bold()
                                     .foregroundColor(.gray)
                                     .padding(.top, 6)
@@ -170,11 +167,9 @@ struct LocationView: View {
                             
                             VStack(alignment: .leading, spacing: 0) {
                                 Text("625 KM")
-//                                    .font(.subheadline)
                                     .bold()
                                 
                                 Text("Distance")
-//                                    .font(.subheadline)
                                     .bold()
                                     .foregroundColor(.gray)
                                     .padding(.top, 6)
@@ -192,11 +187,9 @@ struct LocationView: View {
                             
                             VStack(alignment: .leading, spacing: 0) {
                                 Text("21° C")
-//                                    .font(.subheadline)
                                     .bold()
                                 
                                 Text("Sunny")
-//                                    .font(.subheadline)
                                     .bold()
                                     .foregroundColor(.gray)
                                     .padding(.top, 6)
@@ -228,14 +221,16 @@ struct LocationView: View {
                         }
                         
                         Spacer()
-                        Button {
-                            print("j")
+                        
+                        NavigationLink {
+                            PaymentView()
                         } label: {
                             ButtonLabel(isDisabled: false, label: "Book now")
+                                .frame(maxWidth: UIScreen.main.bounds.width * 0.48)
+                                .cornerRadius(50)
+                                .shadow(color: .black.opacity(0.2), radius: 10, x: 2, y: 10)
                         }
-                        .frame(maxWidth: UIScreen.main.bounds.width * 0.48)
-                        .cornerRadius(50)
-                        .shadow(color: .black.opacity(0.2), radius: 10, x: 2, y: 10)
+                        
                     }
                         
                 }
