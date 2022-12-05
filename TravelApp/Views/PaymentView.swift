@@ -66,15 +66,17 @@ struct PaymentView: View {
             
             ScrollView(.vertical, showsIndicators: true) {
                 
-                HStack {
+                HStack(alignment: .top, spacing: 0) {
                     Image("location_3")
                         .resizable()
                         .scaledToFill()
-                        .frame(maxWidth: 60, maxHeight: 60)
+                        .frame(maxWidth: 70, maxHeight: 70)
                         .cornerRadius(12)
                     
-                    VStack(alignment: .leading) {
+                    VStack(alignment: .leading, spacing: 0) {
                         Text("Emerald Bay Inn.")
+                        
+                        Spacer()
                         
                         HStack {
                             HStack {
@@ -99,11 +101,12 @@ struct PaymentView: View {
                                 .padding(.leading, 4)
                         }
                     }
-                    .padding(.top, 12)
-                    .padding(.leading, 5)
+                    .padding(.bottom, 1)
+                    .padding(.leading, 12)
+                    .frame(maxHeight: .infinity)
                 }
-                .padding(.bottom, 12)
                 .frame(maxWidth: .infinity, alignment: .leading)
+                .padding(.bottom, 16)
                 
                 ForEach(details) {detail in
                     HStack {
@@ -222,9 +225,7 @@ struct RadioButton: View {
     var body: some View {
         VStack {
             if isSelected {
-                VStack {
-                    
-                }
+                VStack {}
                 .frame(width: 12, height: 12)
                 .background(Circle().foregroundColor(Color("purple")))
             }
