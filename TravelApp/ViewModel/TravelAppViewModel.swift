@@ -12,15 +12,49 @@ struct CountryData: Hashable {
     var flag: String;
 }
 
+struct Location: Identifiable {
+    var id = UUID()
+    var name: String
+    var startPrice: Int
+    var image: String
+}
+
+struct Tab: Identifiable {
+    var id = UUID()
+    var label: String
+    var value: Int
+}
+
 
 final class TravelAppViewModel: ObservableObject {
     @Published var countriesData: [CountryData] = []
     @Published var country: CountryData;
     @Published var isLocationViewVisible: Bool = false;
+    @Published var locationData: [Location] = []
+    @Published var tabs: [Tab] = []
     
     init() {
         country = CountryData(name: "", flag: "")
         countriesData = getCountries();
+        locationData = [
+            .init(name: "Paris, France", startPrice: 1000, image: "location_3"),
+            .init(name: "Island, USA", startPrice: 1500, image: "location_2"),
+            .init(name: "Bermudha, USA", startPrice: 1000, image: "location_1"),
+            .init(name: "Island, USA", startPrice: 1000, image: "location_3"),
+            .init(name: "Paris, France", startPrice: 1000, image: "location_3"),
+            .init(name: "Island, USA", startPrice: 1500, image: "location_2"),
+            .init(name: "Bermudha, USA", startPrice: 1000, image: "location_1"),
+            .init(name: "Island, USA", startPrice: 1000, image: "location_3"),
+        ]
+        tabs = [
+            .init(label: "All", value: 0),
+            .init(label: "America", value: 1),
+            .init(label: "Africa", value: 2),
+            .init(label: "Europe", value: 3),
+            .init(label: "Asia", value: 4),
+            .init(label: "Ocenia", value: 5),
+        ]
+
     }
     
     func getCountries() -> [CountryData] {

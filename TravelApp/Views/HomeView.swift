@@ -7,11 +7,7 @@
 
 import SwiftUI
 
-struct Tab: Identifiable {
-    var id = UUID()
-    var label: String
-    var value: Int
-}
+
 
 struct Category: Identifiable {
     var id = UUID()
@@ -20,44 +16,20 @@ struct Category: Identifiable {
     var image: String
 }
 
-struct Location: Identifiable {
-    var id = UUID()
-    var name: String
-    var startPrice: Int
-    var image: String
-}
 
 struct HomeView: View {
     @State var selectedTab: Int = 0;
     @Environment(\.colorScheme) var colorScheme;
     @State var isVisible: Bool = false;
-    @EnvironmentObject var viewModel: TravelAppViewModel;
-//    var animation: Namespace.ID;
-    
+    @EnvironmentObject var viewModel: TravelAppViewModel;    
     @Namespace var animation;
-    
-    var tabs: [Tab] = [
-        .init(label: "All", value: 0),
-        .init(label: "America", value: 1),
-        .init(label: "Africa", value: 2),
-        .init(label: "Europe", value: 3),
-        .init(label: "Asia", value: 4),
-        .init(label: "Ocenia", value: 5),
-    ]
+
     
     var categories: [Category] = [
         .init(label: "Trips", value: 0, image: "category_trips"),
         .init(label: "Hotel", value: 1, image: "category_hotel"),
         .init(label: "Transport", value: 2, image: "category_transport"),
         .init(label: "Events", value: 3, image: "category_events"),
-    ]
-    
-    var locations: [Location] = [
-        .init(name: "Paris, France", startPrice: 1000, image: "location_3"),
-//        .init(name: "paris", startPrice: 1000, image: "location_3"),
-        .init(name: "Island, USA", startPrice: 1500, image: "location_2"),
-        .init(name: "Bermudha, USA", startPrice: 1000, image: "location_1"),
-        .init(name: "Island, USA", startPrice: 1000, image: "location_3"),
     ]
     
     var categorySize: CGFloat = ((UIScreen.main.bounds.width - 48) / 4) * 0.55;
@@ -135,7 +107,7 @@ struct HomeView: View {
                 
                 ScrollView(.horizontal, showsIndicators: false) {
                     HStack(spacing: 0) {
-                        ForEach(tabs, id: \.id) {item in
+                        ForEach(viewModel.tabs, id: \.id) {item in
                             Button {
                                 selectedTab = item.value
                             } label: {
@@ -158,7 +130,7 @@ struct HomeView: View {
                 
                 ScrollView(.horizontal, showsIndicators: false) {
                     HStack(spacing: 0) {
-                        ForEach(locations) {location in
+                        ForEach(viewModel.locationData) {location in
                             NavigationLink {
                                 LocationView(animation: animation)
                             } label: {
@@ -168,7 +140,6 @@ struct HomeView: View {
                                             .resizable()
                                             .scaledToFill()
                                             .frame(width: slideSize, height: slideSize * 1.3)
-//                                            .matchedGeometryEffect(id: location.name, in: animation)
                                         
                                         VStack {
                                             Spacer()
@@ -178,6 +149,7 @@ struct HomeView: View {
                                                         .foregroundColor(.white)
                                                         .font(.body)
                                                         .bold()
+                                                        .padding(.bottom, 2)
                                                     
                                                     Text("Starting at $\(location.startPrice)")
                                                         .foregroundColor(.white)

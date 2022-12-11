@@ -20,7 +20,7 @@ struct BackButtonLabel: View {
         .frame(width: 42, height: 42)
         .background(Color(.systemBackground))
         .cornerRadius(10)
-        .shadow(color: .black.opacity(0.05), radius: 10, x: 10, y: 10)
+        .shadow(color: .gray.opacity(0.2), radius: 5, x: 0, y: 0)
     }
 }
 
